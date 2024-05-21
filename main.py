@@ -74,3 +74,6 @@ def create_cubes(n):
     return result
 
 print(create_cubes(10))
+
+for x in create_cubes(10):
+    print(x)
