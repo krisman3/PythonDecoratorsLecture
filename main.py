@@ -145,9 +145,10 @@ Problem 3
 Use the iter() function to convert the string below into an iterator:
 """
 
-s = 'hello'
+# s = 'hello'
+#
+# s_iter = iter(s)
+#
+# for letter in s_iter:
+#     print(letter)
 
-s_iter = iter(s)
-
-for letter in s_iter:
-    print(letter)
