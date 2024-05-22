@@ -86,3 +86,19 @@
 #
 # for number in gen_fibon(10):
 #     print(number)
+
+def simple_gen():
+    for x in range(3):
+        yield x
+
+
+# for number in simple_gen():
+#     print(number)
+
+g = simple_gen()
+
+s = 'Hello'
+for letter in s:
+    print(letter)
+
+
