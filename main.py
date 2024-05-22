@@ -67,13 +67,22 @@
 #
 # func_needs_decorator()
 
-def create_cubes(n):
+# def create_cubes(n):
+#
+#    for x in range(n):
+#        yield x**3
+#
+# print(create_cubes(10))
+#
+# for x in create_cubes(10):
+#     print(x)
 
-   for x in range(n):
-       yield x**3
-
-print(create_cubes(10))
-
-for x in create_cubes(10):
-    print(x)
-
+# def gen_fibon(n):
+#     a = 1
+#     b = 1
+#     for i in range(n):
+#         yield a
+#         a, b = b, a+b
+#
+# for number in gen_fibon(10):
+#     print(number)
