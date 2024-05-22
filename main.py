@@ -113,13 +113,13 @@ Create a generator that generates the squares of numbers up to some number N.
 """
 
 
-def gensquares(n):
-    for x in range(n):
-        yield x**2
-
-
-for number in gensquares(10):
-    print(number)
+# def gensquares(n):
+#     for x in range(n):
+#         yield x**2
+#
+#
+# for number in gensquares(10):
+#     print(number)
 
 
 """
@@ -128,13 +128,26 @@ Create a generator that yields "n" random numbers between a low and high number 
 """
 
 
-import random
+# import random
+#
+#
+# def rand_num(low, high, n):
+#     for x in range(n):
+#         yield random.randint(low, high)
+#
+#
+# for number in rand_num(1, 10, 12):
+#     print(number)
 
 
-def rand_num(low, high, n):
-    for x in range(n):
-        yield random.randint(low, high)
+"""
+Problem 3
+Use the iter() function to convert the string below into an iterator:
+"""
 
+s = 'hello'
 
-for number in rand_num(1, 10, 5):
-    print(number)
+s_iter = iter(s)
+
+for letter in s_iter:
+    print(letter)
